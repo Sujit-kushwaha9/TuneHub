@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Login page</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+<style>
+	body{
+		background-color : blue;
+	}
+</style>
+</head>
+<body>
+	<h1>User loging</h1>
+	<form action="/validate" method="post">
+	<table>
+		<tr>
+			<td><label>Email:</label></td>
+			<td><input type="email" name="email"></td>
+		</tr>
+		<tr>
+			<td><label>Password:</label></td>
+			<td><input type="text" name="password"></td>
+		</tr>
+		<tr>
+			<td><input type="submit" name="LOGIN"></td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
